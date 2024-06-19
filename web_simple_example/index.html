@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".hide").click(function () {
+                $("p").hide(1000);
+            });
+            $(".fade").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+        });
+
+    </script>
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <button class="hide">Hide</button>
+    <p>王炳伸好身</p>
+    <p>Gone my days are young and gay.</p>
 
-<h2>This is a smaller Heading</h2>
-<p>This is a paragraph...<br>with break<br>lines</p>
+    <button class="fade">Click to fade in sentences</button><br><br>
+    <div id="div1"> 七晚飯</div><br>
+    <div id="div2"> 但是</div><br>
+    <div id="div3"> 我要吃廣炒ˋ</div>
 
-<h3> item list </h3>
-<ul>
-    <li>item 1</li>
-    <li style="color: blue">item 2 and style</li>
-    <li><a href="https://www.google.com">with link</a></li>
-</ul>
+    <h2>This is a smaller Heading</h2>
+    <p>This is a paragraph...<br>with break<br>lines</p>
 
-<h3>An image with link</h3>
-<a href="https://github.com/gorisanson/pikachu-volleyball">
-    <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
-</a>
+    <h3> item list </h3>
+    <ul>
+        <li>item 1</li>
+        <li style="color: blue">item 2 and style</li>
+        <li><a href="https://www.google.com">with link</a></li>
+    </ul>
 
-<p class="large">style from "/style.css"</p>
+    <h3>An image with link</h3>
+    <a href="https://github.com/gorisanson/pikachu-volleyball">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
+    </a>
+
+    <p class="large">style from "/style.css"</p>
 
 </body>
+
 </html>
